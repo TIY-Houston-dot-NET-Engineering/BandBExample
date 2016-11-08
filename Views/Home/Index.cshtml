@@ -1,0 +1,7 @@
+@model IEnumerable<Models.BandB>
+
+<ul>
+    @foreach(var b in @Model){
+        <li>@Html.Partial("BandB", b)</li>
+    }
+</ul>
